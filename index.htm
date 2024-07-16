@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Udit Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://kit.fontawesome.com/cb8e2cb765.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- <img src="images/Udit-logo.png" class="logo"> -->
+                <ul id="sidemenu">
+                    <li><a href="#header" onclick="selectItem()">Home</a></li>
+                    <li><a href="#about" onclick="selectItem()">About</a></li>
+                    <li><a href="#service" onclick="selectItem()">Services</a></li>
+                    <li><a href="#portfolio" onclick="selectItem()">Project</a></li>
+                    <li><a href="#contact" onclick="selectItem()">Contact</a></li>
+                    <i class="fa-solid fa-x" onclick="closemenu()" onclick="toggleMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I<span> Udit Singh </span> Welcome to my Portfolio And,<br>
+                    <div class="animation">I am <span></span></div>
+                </h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------------------ About ----------------------------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col1">
+                    <img src="images/User.jpg" alt="">
+                </div>
+                <div class="about-col2">
+                    <h1 class="sub-tittle">About Me</h1>
+                    <p>As a recent graduate eager to embark on a fulfilling career journey, I
+                        am a passionate and highly motivated individual with a strong
+                        commitment to personal and professional growth. During my time
+                        at university, I actively engaged in various projects and coursework
+                        that allowed me to develop a solid foundation in Development . Through these experiences, I
+                        honed my critical thinking, problem- solving, and analytical abilities, enabling me to approach
+                        challenges
+                        with confidence and creativity.
+                    </p>
+                    <div class="tab-tittle">
+                        <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Java, Python</span><br>Creating logics and backend</li>
+                            <li><span>Web Development</span><br>(HTML, CSS, Java-Script) to create web apps</li>
+                            <li><span>API</span><br>API stands for Application Programming Interface</li>
+                            <li><span>SQL, Mpngo-DB</span><br>Making Databases</li>
+                            <li><span>Software</span><br>Bootstrap, wordpress, SQL-workbench and Adobe(Photoshope)</li>
+                            <li><span>AI and ML</span><br>To Anaalyze the Data</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>2021-Curent</span><br>UI/UX design training at SRM</li>
+                            <li><span>2019-2021</span><br>Team lead at startApp LLc</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2018</span><br>10<sup>th</sup> Pass with 74.70%</li>
+                            <li><span>2020</span><br>12<sup>th</sup> Pass with 60.60%</li>
+                            <li><span>2020-2023</span><br>BCA(Bachelor in Computer Application) at Apex University,
+                                Rajasthan</li>
+                            <li><span>2023-2025</span><br>MCA(Master's in Computer Application) at SRM University, Tamil
+                                Nadu</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------------------------------------------- services -------------------------------------- -->
+    <div id="service">
+        <div class="container">
+            <div class="sub-tittle">My services</div>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>As a web designer, I played a key role in creating visually appealing and user-friendly websites
+                        for clients across various industries</p>
+                    <!-- <a href="#">Learn More</a> -->
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>I am a passionate UI/UX designer with a focus on creating intuitive and visually appealing
+                        digital experiences. With a background in Web Development, I have a keen eye for detail and a
+                        deep understanding of user-centered design principles.</p>
+                    <!-- <a href="#">Learn More</a> -->
+                </div>
+                <div>
+                    <i class="fa-brands fa-uikit"></i>
+                    <h2>Frontend Development</h2>
+                    <p>I am a dedicated Android app developer with a passion for creating innovative and user-friendly
+                        mobile applications. With a strong background in IT services, I have a proven track record of
+                        delivering high-quality Android apps that meet client requirements and exceed user expectations.
+                    </p>
+                    <!-- <a href="#">Learn More</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------------------------------------- certification ------------------------------------------- -->
+
+    <div class="swiper">
+        <div class="container">
+            <div class="sub-tittle">My Achivement</div>
+            <div class="box-container">
+                <div class="box">
+                    <div class="image">
+                        <img src="/images/Cybersuraksha.jpg" class="certificate-image">
+                    </div>
+                    <div class="certificate-content">
+                        <h1>Microsoft Cybersuraksha</h1>
+                        <p>This certification demonstrates my commitment to enhancing your cybersecurity skills and
+                            knowledge. </p>
+                        <a href="/Certificates/Cybersurakha.html">Know More</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <img src="/images/AWS certificates.png" class="certificate-image">
+                    </div>
+                    <div class="certificate-content">
+                        <h1>AWS Academy</h1>
+                        <p>This certification highlights my dedication to advancing your skills in artificial
+                            intelligence and machine learning. </p>
+                        <a href="/Certificates/AWS-AIML.html">Know More</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <img src="/images/Google certificate.png" class="certificate-image">
+                    </div>
+                    <div class="certificate-content">
+                        <h1>Google for developer</h1>
+                        <p>This certification reflects my commitment to expanding your expertise in artificial
+                            intelligence and machine learning. </p>
+                        <a href="/Certificates/Google-certifcation.html">Know More</a>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <button id="load-more"> load more </button>
+        </div>
+    </div>
+
+
+    <!-- ------------------------------------------- port folio ----------------------------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-tittle">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="/images/SwigyImage.png">
+                    <div class="layer">
+                        <h3>Swigy UI Clone </h3>
+                        <p>I create this clone using the ReactJs and tailwind css</p>
+                        <div>
+                            <!-- <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> -->
+                            <a href="https://github.com/Uditsingh1234/Swigy-UI-Clone.git"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://swigyduplicate.vercel.app/"><i class="fa-solid fa-globe"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/images/X-O.png">
+                    <div class="layer">
+                        <h3>Tic-Tac-Toa-X-O</h3>
+                        <p>I create this project with the help of Simple HTML, CSS & Java-Script</p>
+                        <div>
+                            <!-- <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> -->
+                            <a href="https://github.com/Uditsingh1234/Tic-Tac-Toa-X-O-.git"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://uditsingh1234.github.io/Tic-Tac-Toa-X-O-/"><i class="fa-solid fa-globe"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/images/Usability.jpeg">
+                    <div class="layer">
+                        <h3>Usability Hub UI Clone</h3>
+                        <p>I create this with the help of Simple HTML & CSS</p>
+                        <div>
+                            <!-- <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> -->
+                            <a href="https://github.com/Uditsingh1234/Usability-Website-Clone.git"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://uditsingh1234.github.io/Usability-Website-Clone/"><i class="fa-solid fa-globe"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See My Project Gallery</a>
+
+        </div>
+    </div>
+
+    <!-- -------------------- contact ------------------------------ -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-tittle">Contact me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>udit6706@gmail.com</p>
+                    <p><i class="fa-solid fa-phone-volume"></i>+91 6378210266</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/Uditsingh1234"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.upwork.com/freelancers/~0136d7e944b63a0510"><i
+                                class="fa-brands fa-upwork"></i></a>
+                        <a href="https://www.youtube.com/channel/UCZqC-n4tkvhPRA0rLUKueIg"><i
+                                class="fa-brands fa-youtube"></i></i></a>
+                        <a
+                            href="https://www.linkedin.com/in/uditsingh12345?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="/images/Udit_Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form form action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="b4983363-9b08-4e0a-abf3-bf25bb24a98e">
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="text" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+            <div class="upside"><a href="#"><i class="fa-solid fa-angle-up"></i></a></div>
+        </div>
+        <div class="copy-right">
+            <p>Develope and Manage by @Udit Singh</p>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</body>
+
+</html>

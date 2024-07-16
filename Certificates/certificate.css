@@ -1,0 +1,91 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    background-color: black;
+    color: white;
+}
+
+.certificate-back {
+    display: flex;
+    justify-content: start;
+    width: 90vw;
+    margin-bottom: 50px;
+}
+
+.certificate-back a{
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 20px;
+    background: #2E2824;
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+.certificate-heading {
+    width: 90%;
+    margin-bottom: 40px;
+    font-size: 25px;
+}
+
+.certificate-heading h1 {
+    display: flex;
+    justify-content: start;
+}
+
+
+
+.certificate-image {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.certificate-image img {
+    width: 90%;
+    background-size: cover;
+}
+
+.certificate-verification {
+    width: 90%;
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+
+
+.certificate-desc {
+    width: 90%;
+    margin-top: 30px;
+}
+
+.certificate-desc div {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+
+
+ @media only screen and (max-width: 600px) {
+        body{
+            padding: 20px 10px;
+            margin: 0;
+        }
+        .certificate-heading{
+            font-size: 3vw;
+            line-height: 30px;
+        }
+    }
