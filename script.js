@@ -17,13 +17,13 @@ var sidemenu = document.getElementById("sidemenu");
 var menu = document.querySelector('nav ul a');
 
 function openmenu(){
-    sidemenu.style.right = "0";
+    sidemenu.style.left = "0";
 }
 function closemenu(){
-    sidemenu.style.right = "-200px";
+    sidemenu.style.left = "-250px";
 }
 function selectItem() {
-    sidemenu.style.right = "-200px";    
+    sidemenu.style.left = "-250px";    
 }
 
 
